@@ -1,0 +1,39 @@
+/* remove after finished */
+.col {
+    border-color: blue;
+    border-style:dashed;
+
+}
+.row {
+    border-color: hotpink;
+    border-style: solid;
+}
+
+/* remove after finished */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif !important;
+    font-family: 'Ubuntu', sans-serif !important;
+}
+.banner {
+    margin-top: 0px;
+    max-height: 20vh;
+}
+.sidebar {
+    position: absolute;
+    left: 0px;
+}
+.main-container {
+    background-color: #EEEEEE;
+}
+.container {
+    background-color: white;
+    border-color: greenyellow;
+    border-style: solid;
+    top: 0;
+    bottom: 0;
+    left: 25%;
+    right: 25%;
+}
