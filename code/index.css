@@ -23,8 +23,17 @@ body {
     width: 24 !important;
     height: 24 !important;
 }
-/* not working right  
-.sidebar {
-    position: sticky;
+
+.main-container {
+    background-color: #EEEEEE;
 }
-*/
+
+.container {
+    background-color: white;
+    z-index: 100;
+    border-color: hotpink;
+    top: 0;
+    bottom: 0;
+    left: 25%;
+    right: 25%;
+}
