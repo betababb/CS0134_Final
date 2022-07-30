@@ -1,9 +1,35 @@
+/* remove after finished */
 .container {
-    color: red;
-    background-color: aqua;
+    border-color: greenyellow;
+    border-style: solid;
+    background-color: pink;
 }
-
 .row {
     border-color: black;
-    border-width: 2px;
+    border-style: dashed;
+}
+/* remove after finished */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif !important;
+    font-family: 'Ubuntu', sans-serif !important;
+}
+.banner {
+    margin-top: 0px;
+    max-height: 20vh;
+}
+.sidebar {
+    position: absolute;
+    left: 0px;
+}
+.main-container {
+    background-color: #EEEEEE;
+}
+.container {
+    top: 0;
+    bottom: 0;
+    left: 25%;
+    right: 25%;
 }
