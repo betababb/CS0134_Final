@@ -1,6 +1,7 @@
 * {
     margin: auto;
     padding: 0;
+    max-width: max-content;
     box-sizing: border-box;
     font-family: 'Titillium Web', sans-serif !important;
     font-family: 'Ubuntu', sans-serif !important;
@@ -8,7 +9,7 @@
 }
 .fa {
   font-family: 'FontAwesome' !important;
-  color: white;
+  color: black;
 }
 
 body {
@@ -19,7 +20,7 @@ body {
 
 .banner {
     margin-top: 0px;
-    position: absolute;
+    position: relative;
     max-height: 20vh;
     z-index: -8;
 }
@@ -35,7 +36,7 @@ body {
   width: 50% !important;
   margin-left: 25% !important;
   margin-right: 25% !important;
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
 .side-panels {
@@ -53,49 +54,32 @@ body {
   z-index: -9;
 }
 
-
 /* sidebar stuff */
-.wrapper {
+body .wrapper{
   height: 100%;
   width: 300px;
   position: relative;
   z-index: 100;
   margin-top: 0;
-}
-
-.fa-user-astronaut {
-  color: #2b2867;
+  /* margin-left: 0; */
+  background-color: greenyellow;
 }
 .wrapper .menu-btn{
   position: absolute;
-  left: 0px;
+  left: 20px;
   top: 0px;
-  background: #fff;
+  background:  rgb(148, 120, 248);
+  color: #fff;
   height: 45px;
   width: 45px;
   z-index: 9999;
-  border-radius: 15px;
+  border: 1px solid #333;
+  border-radius: 5px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
-}
-.menu-btn .fa-x {
-  color: #2b2867;
-}
-.menu-btn:active .fa-x {
-  color: #2b2867;
-}
-.menu-btn:hover {
-  background-color: #eaeaf0;
-}
-.menu-btn:active .fa-user-astronaut {
-  color: #2b2867;
-}
-.menu-btn:active{
-  background-color: #cbcbe2;
-  transform: translateY(8px)
 }
 #btn:checked ~ .menu-btn{
   left: 247px;
@@ -105,71 +89,67 @@ body {
   font-size: 23px;
   transition: all 0.3s ease;
 }
-.wrapper .menu-btn i.fa-x{
+.wrapper .menu-btn i.fa-times{
   opacity: 0;
 }
-#btn:checked ~ .menu-btn i.fa-x{
+#btn:checked ~ .menu-btn i.fa-times{
   opacity: 1;
   transform: rotate(-180deg);
 }
-#btn:checked ~ .menu-btn i.fa-user-astronaut{
+#btn:checked ~ .menu-btn i.fa-bars{
   opacity: 0;
   transform: rotate(180deg);
 }
 #sidebar{
   top: 0;
+  /* left: 0 !important; */
   position: fixed;
-/*  background: red;  <----come back to later */
+  background: #404040;
   height: 100%;
-  width: 270px;
+  width: 12vw;
   overflow: hidden;
   left: -270px;
   transition: all 0.3s ease;
 }
 #btn:checked ~ #sidebar{
-  position: relative;
-  margin-left: 0;
-  margin-top: 0;
   left: 0;
 }
 #sidebar .title{
   line-height: 65px;
   text-align: center;
-  background: #2b3a67;
-  font-size: 50px;
+  background: rgb(64, 40, 153);
+  font-size: 25px;
   font-weight: 600;
   color: #f2f2f2;
-}
-.title a {
-  text-decoration: none;
-  color: white;
+  border-bottom: 1px solid black;
 }
 #sidebar .list-items{
   position: relative;
-  background-color: #1d2262;
+  background:  rgb(148, 120, 248);
   width: 100%;
   height: 100%;
   list-style: none;
-  border-radius: 0px 0px 30px;
 }
 #sidebar .list-items li{
   padding-left: 40px;
   line-height: 50px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid #333;
   transition: all 0.3s ease;
 }
 #sidebar .list-items li:hover{
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
-  box-shadow: 0 0px 10px 3px white;
+  box-shadow: 0 0px 10px 3px #222;
 }
 #sidebar .list-items li:first-child{
   border-top: none;
 }
 #sidebar .list-items li a{
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: 18px;
-  font-weight: 1000;
+  font-weight: 500;
   height: 100%;
   width: 100%;
   display: block;
@@ -188,7 +168,21 @@ body {
   align-items: center;
   justify-content: center;
 }
-
+#sidebar .list-items .icons a{
+  height: 100%;
+  width: 40px;
+  display: block;
+  margin: 0 5px;
+  font-size: 18px;
+  color: #f2f2f2;
+  background: #4a4a4a;
+  border-radius: 5px;
+  border: 1px solid #383838;
+  transition: all 0.3s ease;
+}
+#sidebar .list-items .icons a:hover{
+  background: #404040;
+}
 .list-items .icons a:first-child{
   margin-left: 0px;
 }
@@ -197,26 +191,16 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  color: red;
+  color: #202020;
   z-index: -1;
   width: 100%;
   text-align: center;
 }
-
-
-
-
-/* useless? 
-#sidebar .list-items .icons a{
-  height: 100%;
-  width: 40px;
-  display: block;
-  margin: 0 5px;
-  font-size: 18px;
-  color: #f2f2f2;
-  background: green;
-  border-radius: 5px;
-  border: 1px solid greenyellow;
-  transition: all 0.3s ease;
+.content .header{
+  font-size: 45px;
+  font-weight: 700;
 }
-*/
+.content p{
+  font-size: 40px;
+  font-weight: 700;
+}
