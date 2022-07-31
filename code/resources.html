@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <title>Resources | Astro Mini Manual</title>
   <link href="resources.css" rel="stylesheet">
-  
+  <!--inspiration for all of the charts & tables: https://astroneer.fandom.com/wiki/Resources-->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,79 +60,376 @@
   </div>     
 </div>
 <div class="container">
-  <div class="row">
-    <h1>METALS</h1>
-  </div>
-  <div class="row">
-    <div class="col">
-      <p>metal image</p>
-      <p>metal description</p>
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          All Planet Resources
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>Astronium</td>
+                <td>Ammonium</td>
+                <td>Clay</td>
+                <td>Compound</td>
+                <td>Graphite</td>
+              </tr>
+              <tr>
+                <td>Laterite</td>
+                <td>Organic</td>
+                <td>Quartz</td>
+                <td>Resin</td>
+                <td>Soil</td>
+              </tr>
+            </tbody>
+          </table>        
+        </div>
+      </div>
     </div>
-    <div class="col">
-      <p>metal image</p>
-      <p>metal description</p>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          Specific Planet Resources
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Resource</th>
+                <th scope="col">Sylva</th>
+                <th scope="col">Desolo</th>
+                <th scope="col">Calidor</th>
+                <th scope="col">Vesania</th>
+                <th scope="col">Novus</th>
+                <th scope="col">Glacio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Sphalerite</th>
+                <td>check</td>
+                <td>check</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">Wolframite</th>
+                <td></td>
+                <td>check</td>
+                <td>check</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">Malachite</th>
+                <td>check</td>
+                <td></td>
+                <td>check</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">Lithium</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>check</td>
+                <td>check</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">Hematite</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>check</td>
+                <td>check</td>
+              </tr>
+              <tr>
+                <th scope="row">Titanite</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>check</td>
+                <td></td>
+                <td>check</td>
+              </tr>
+            </tbody>
+          </table>        
+        </div>
+      </div>
     </div>
-    <div class="col">
-      <p>metal image</p>
-      <p>metal description</p>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Smelting Furnace Conversions
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Raw Resource</th>
+                <th scope="col"><!--Empty for Arrow column--></th>
+                <th scope="col">Refined Resource</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Carbon</td>
+                <td></td>
+                <td>Organic</td>
+              </tr>
+              <tr>
+                <td>Ceramic</td>
+                <td></td>
+                <td>Clay</td>
+              </tr>
+              <tr>
+                <td>Glass</td>
+                <td></td>
+                <td>Quartz</td>
+              </tr>
+              <tr>
+                <td>Aluminum</td>
+                <td></td>
+                <td>Laterite</td>
+              </tr>
+              <tr>
+                <td>Zinc</td>
+                <td></td>
+                <td>Sphalerite</td>
+              </tr>
+              <tr>
+                <td>Copper</td>
+                <td></td>
+                <td>Malachite</td>
+              </tr>
+              <tr>
+                <td>Tungsten</td>
+                <td></td>
+                <td>Wolframite</td>
+              </tr>
+              <tr>
+                <td>Iron</td>
+                <td></td>
+                <td>Hematite</td>
+              </tr>
+              <tr>
+                <td>Titanium</td>
+                <td></td>
+                <td>Titanite</td>
+              </tr>
+            </tbody>
+          </table>        
+        </div>
+      </div>
     </div>
-    <div class="col">
-      <p>metal image</p>
-      <p>metal description</p>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Atmospheric Resources
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Resource</th>
+                <th scope="col">Sylva</th>
+                <th scope="col">Calidor</th>
+                <th scope="col">Vesania</th>
+                <th scope="col">Novus</th>
+                <th scope="col">Glacio</th>
+                <th scope="col">Atrox</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Hydrogen</th>
+                <td>75</td>
+                <td>50</td>
+                <td>100</td>
+                <td>25</td>
+                <td>x</td>
+                <td>x</td>
+              </tr>
+              <tr>
+                <th scope="row">Argon</th>
+                <td>x</td>
+                <td>x</td>
+                <td>50</td>
+                <td>x</td>
+                <td>100</td>
+                <td>x</td>
+              </tr>
+              <tr>
+                <th scope="row">Methane</th>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>75</td>
+                <td>x</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <th scope="row">Nitrogen</th>
+                <td>100</td>
+                <td>x</td>
+                <td>75</td>
+                <td>x</td>
+                <td>x</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <th scope="row">Sulfur</th>
+                <td>x</td>
+                <td>100</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <th scope="row">Helium</th>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>25</td>
+              </tr>
+            </tbody>
+          </table>        
+        </div>
+      </div>
     </div>
-    <div class="col">
-      <p>metal image</p>
-      <p>metal description</p>
-    </div>
-  </div>
-  <div class="row">
-    <h1>METALS</h1>
-  </div>
-  <div class="row">
-    <div class="col">
-      <p>metal image</p>
-      <p>metal description</p>
-    </div>
-    <div class="col">
-      <p>metal image</p>
-      <p>metal description</p>
-    </div>
-    <div class="col">
-      <p>metal image</p>
-      <p>metal description</p>
-    </div>
-    <div class="col">
-      <p>metal image</p>
-      <p>metal description</p>
-    </div>
-    <div class="col">
-      <p>metal image</p>
-      <p>metal description</p>
-    </div>
-  </div>
-  <div class="row">
-    <h1>ORGANICS</h1>
-  </div>
-  <div class="row">
-    <div class="col">
-      <p>metal image</p>
-      <p>metal description</p>
-    </div>
-    <div class="col">
-      <p>metal image</p>
-      <p>metal description</p>
-    </div>
-    <div class="col">
-      <p>metal image</p>
-      <p>metal description</p>
-    </div>
-    <div class="col">
-      <p>metal image</p>
-      <p>metal description</p>
-    </div>
-    <div class="col">
-      <p>metal image</p>
-      <p>metal description</p>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          Chemistry Lab
+        </button>
+      </h2>
+      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Composite Resource</th>
+                <th scope="col"><!--Empty for Arrow column--></th>
+                <th scope="col">Resource 1</th>
+                <th scope="col">Resource 2</th>
+                <th scope="col">Gas</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Rubber</td>
+                <td></td>
+                <td>Organic</td>
+                <td>Resin</td>
+                <td>n/a</td>
+              </tr>
+              <tr>
+                <td>Plastic</td>
+                <td></td>
+                <td>Carbon</td>
+                <td>Compound</td>
+                <td>n/a</td>
+              </tr>
+              <tr>
+                <td>Aluminum Alloy</td>
+                <td></td>
+                <td>Aluminum</td>
+                <td>Copper</td>
+                <td>n/a</td>
+              </tr>
+              <tr>
+                <td>Tungsten Carbide</td>
+                <td></td>
+                <td>Tungsten</td>
+                <td>Carbon</td>
+                <td>n/a</td>
+              </tr>
+              <tr>
+                <td>Graphene</td>
+                <td></td>
+                <td>Graphite</td>
+                <td>Hydrazine</td>
+                <td>n/a</td>
+              </tr>
+              <tr>
+                <td>Diamond</td>
+                <td></td>
+                <td>Graphene</td>
+                <td>Graphene</td>
+                <td>n/a</td>
+              </tr>
+              <tr>
+                <td>Hydrazine</td>
+                <td></td>
+                <td>Ammonium</td>
+                <td>Ammonium</td>
+                <td>Hydrogen</td>
+              </tr>
+              <tr>
+                <td>Silicne</td>
+                <td></td>
+                <td>Resin</td>
+                <td>Quartz</td>
+                <td>Methane</td>
+              </tr>
+              <tr>
+                <td>Explosive Powder</td>
+                <td></td>
+                <td>Carbon</td>
+                <td>Carbon</td>
+                <td>Sulfur</td>
+              </tr>
+              <tr>
+                <td>Steel</td>
+                <td></td>
+                <td>Iron</td>
+                <td>Carbon</td>
+                <td>Argon</td>
+              </tr>
+              <tr>
+                <td>Titanium Alloy</td>
+                <td></td>
+                <td>Titanium</td>
+                <td>Graphene</td>
+                <td>Nitrogen</td>
+              </tr>
+              <tr>
+                <td>Nanocarbon Alloy</td>
+                <td></td>
+                <td>Titanium Alloy</td>
+                <td>Steel</td>
+                <td>Helium</td>
+              </tr>
+            </tbody>
+          </table>        
+        </div>
+      </div>
     </div>
   </div>
 </div>
