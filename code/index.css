@@ -33,8 +33,17 @@ body {
     background-color: white;
     z-index: 100;
     border-color: hotpink;
+    border-style: solid;
     top: 0;
     bottom: 0;
     left: 25%;
     right: 25%;
+}
+.col {
+    border-color: blue;
+    border-style: solid;
+}
+.row {
+    border-color: greenyellow;
+    border-style: solid;
 }

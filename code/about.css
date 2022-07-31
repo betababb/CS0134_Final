@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif !important;
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+.banner {
+    margin-top: 0px;
+    max-height: 20vh;
+}
+
+.sidebar {
+    position: absolute;
+    left: 0px;
+}
+
+.nav-pills>li>a {
+    background-color: white !important;
+}
+
+
+.planets {
+    width: 24 !important;
+    height: 24 !important;
+}
+
+.main-container {
+    background-color: #EEEEEE;
+}
+
+.container {
+    background-color: white;
+    z-index: 100;
+    border-color: hotpink;
+    top: 0;
+    bottom: 0;
+    left: 25%;
+    right: 25%;
+}
