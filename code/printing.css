@@ -2,7 +2,7 @@
     margin: auto;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Titillium Web', sans-serif !important;
+    font-family: 'Titillium Web', sans-serif;
     font-family: 'Ubuntu', sans-serif !important;
     max-width: 1200px;
 }
@@ -85,16 +85,16 @@ body {
   color: #2b2867;
 }
 .menu-btn:active .fa-x {
-  color: #2b2867;
+  color: #fff;
 }
 .menu-btn:hover {
-  background-color: #eaeaf0;
+  background-color: #d5d4e1;
 }
 .menu-btn:active .fa-user-astronaut {
-  color: #2b2867;
+  color: #fff;
 }
 .menu-btn:active{
-  background-color: #cbcbe2;
+  background-color: #403e76;
   transform: translateY(8px)
 }
 #btn:checked ~ .menu-btn{
@@ -132,35 +132,55 @@ body {
   margin-top: 0;
   left: 0;
 }
+
 #sidebar .title{
   line-height: 65px;
   text-align: center;
-  background: #2b3a67;
-  font-size: 50px;
-  font-weight: 600;
+  background: #2b2867;
   color: #f2f2f2;
 }
 .title a {
-  text-decoration: none;
   color: white;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bolder;
+  border: lightblue solid;
 }
+#sidebar .title a:link{
+  color: none;
+}
+#sidebar .title a:visited{
+  color: orange;
+}
+#sidebar .title:active{
+  line-height: 65px;
+  text-align: center;
+  background: white !important;
+  color: #2b2867 !important;
+}
+#sidebar .title:hover{
+  line-height: 65px;
+  text-align: center;
+  background: white !important;
+  color: #2b2867 !important;
+}
+
+
 #sidebar .list-items{
+  text-align: center;
   position: relative;
-  background-color: #1d2262;
+  background-color: #2b2867;
   width: 100%;
   height: 100%;
   list-style: none;
   border-radius: 0px 0px 30px;
+  border: solid greenyellow;
 }
 #sidebar .list-items li{
-  padding-left: 40px;
+  margin-left: 0 !important;
   line-height: 50px;
   transition: all 0.3s ease;
-}
-#sidebar .list-items li:hover{
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid transparent;
-  box-shadow: 0 0px 10px 3px white;
+  border: solid red;
 }
 #sidebar .list-items li:first-child{
   border-top: none;
@@ -174,9 +194,17 @@ body {
   width: 100%;
   display: block;
 }
-#sidebar .list-items li a i{
-  margin-right: 20px;
+#sidebar .list-items li:hover{
+  background-color: #fff;
 }
+#sidebar .list-items li a:hover {
+  color: #2b2867;
+}
+#sidebar .list-items li:hover #sub-icon{
+  color: #2b2867;
+}
+/* 
+not using as of right now (social media buttons)
 #sidebar .list-items .icons{
   width: 100%;
   height: 40px;
@@ -188,6 +216,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+*/
 
 .list-items .icons a:first-child{
   margin-left: 0px;
@@ -197,7 +226,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  color: red;
+  color: greenyellow;
   z-index: -1;
   width: 100%;
   text-align: center;
