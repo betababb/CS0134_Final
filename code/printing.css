@@ -12,14 +12,13 @@
 }
 
 body {
-    position: relative;
     min-height: 100vh;
     width: 100%;
 }
 
 .banner {
     margin-top: 0px;
-    position: absolute;
+    position: relative;
     max-height: 20vh;
     z-index: -8;
 }
@@ -30,20 +29,22 @@ body {
 }
 
 .container {
-  position: absolute;
-  background-color: pink;
-  width: 50% !important;
-  margin-left: 25% !important;
-  margin-right: 25% !important;
-  margin-top: 20%;
+  margin-top: 2%;
+  text-align: center;
 }
-
-.side-panels {
-  position: absolute;
-  z-index: -10;
-  background-color: #B6C2D9;
+.container h1 {
+  padding-bottom: 20px;
+  font-weight: bolder;
+  text-shadow: 2px 2px #B6C2D9;
 }
-
+.accordion-button {
+  font-weight: bolder;
+  font-size:large !important;
+}
+.accordion {
+  max-width: 50vw;
+}
+/*
 .middle-panel {
   display: block;
   margin-left: 25%;
@@ -52,8 +53,7 @@ body {
   position: absolute;
   z-index: -9;
 }
-
-
+*/
 /* sidebar stuff */
 .wrapper {
   height: 100%;
@@ -119,12 +119,12 @@ body {
 #sidebar{
   top: 0;
   position: fixed;
-/*  background: red;  <----come back to later */
   height: 100%;
   width: 270px;
   overflow: hidden;
   left: -270px;
   transition: all 0.3s ease;
+  border: dashed hotpink 5px;
 }
 #btn:checked ~ #sidebar{
   position: relative;
@@ -138,6 +138,12 @@ body {
   text-align: center;
   background: #2b2867;
   color: #f2f2f2;
+  border: yellow solid;
+  display: flex;
+}
+#sidebar .title:hover{
+  background: #f2f2f2;
+  color: #2b2867 !important;
 }
 .title a {
   color: white;
@@ -146,12 +152,13 @@ body {
   font-weight: bolder;
   border: lightblue solid;
 }
+/*
 #sidebar .title a:link{
   color: none;
 }
 #sidebar .title a:visited{
-  color: orange;
-}
+  color: none;
+}*/
 #sidebar .title:active{
   line-height: 65px;
   text-align: center;
@@ -175,6 +182,8 @@ body {
   list-style: none;
   border-radius: 0px 0px 30px;
   border: solid greenyellow;
+/*  display: flex;
+ add no wrap here? */
 }
 #sidebar .list-items li{
   margin-left: 0 !important;

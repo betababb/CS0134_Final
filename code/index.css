@@ -1,40 +1,125 @@
-body {
-    position: relative;
+/*--------------------general css---------------------------------*/
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Ubuntu', sans-serif !important;
+    max-width: 1200px;
+}
+.fa {
+    font-family: 'FontAwesome' !important;
+    color: white;
+  }
+  body {
     min-height: 100vh;
     width: 100%;
-    font-family: 'Titillium Web', sans-serif !important;
-    font-family: 'Ubuntu', sans-serif !important;
 }
-
 .banner {
     margin-top: 0px;
+    position: relative;
     max-height: 20vh;
+    z-index: -8;
 }
-
-.planets {
-    width: 24 !important;
-    height: 24 !important;
+.sidebar-container {
+    margin-top: 0px;
+    position: absolute;
 }
-
-.main-container {
-    background-color: #EEEEEE;
-}
-
 .container {
-    background-color: white;
-    z-index: 100;
-    border-color: hotpink;
-    border-style: solid;
-    top: 0;
-    bottom: 0;
-    left: 25%;
-    right: 25%;
+  margin-top: 2%;
+  text-align: center;
 }
-.col {
-    border-color: blue;
-    border-style: solid;
+.container h1 {
+    padding-bottom: 20px;
+    font-weight: bolder;
+    text-shadow: 2px 2px #B6C2D9;
+  }  
+.img-thumbnail {
+    opacity: 1 !important;
+    border: #2b2867 solid 5px !important;
 }
-.row {
-    border-color: greenyellow;
-    border-style: solid;
+.res-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: white;
+    background-color: #2b2867;
+    border-radius: 15px;
+    padding: 5px;
+}
+#resources {
+    display: flex;
+    position: relative;
+}
+#resource-img {
+    opacity: 0.5;
+    border-radius: 15px;
+}
+.pla-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: white;
+    background-color: #2b2867;
+    border-radius: 15px;
+    padding: 5px;
+}
+#planets {
+    display: flex;
+    position: relative;
+}
+#planets-img {
+    opacity: 0.5;
+    border-radius: 15px;
+}
+#planets-link {
+    text-decoration: none;
+}
+.pri-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: white;
+    background-color: #2b2867;
+    border-radius: 15px;
+    padding: 5px;
+}
+#printing {
+    display: flex;
+    position: relative;
+}
+#printing-img {
+    opacity: 0.5;
+    border-radius: 15px;
+}
+#printing-link {
+    text-decoration: none;
+}
+.abt-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: white;
+    background-color: #2b2867;
+    border-radius: 15px;
+    padding: 5px;
+}
+#about {
+    display: flex;
+    position: relative;
+}
+#about-img {
+    opacity: 0.5;
+    border-radius: 15px;
+}
+#about-link {
+    text-decoration: none;
 }
